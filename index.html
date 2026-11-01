@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td colspan="2" align="center">
+                    <h1>Student Registration Form</h1>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="rollnum">Roll No. :</label></td>
+                <td><input type="text" id="rollnum" name="rollnum"></td>
+            </tr>
+            <tr>
+                <td><label for="name">Student's Name:</label></td>
+                <td>
+                <input type="text" id="name" size="21" Placeholder="First Name"/>-<input type="text" id="name" size="21" Placeholder="Last Name"/>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="fathername">Father's Name :</label></td>
+                <td><input type="text" id="fathername" name="fathername"></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date-of-Birth: </label></td>
+                <td>
+                    <input type="text" id="dob" size="3" Placeholder="Day" /> - 
+                    <input type="text" id="dob" size="3" Placeholder="Month" /> -
+                    <input type="text" id="dob" size="8" Placeholder="Year" /> 
+                    <i>(DD-MM-YYYY)</i>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="mobilenum">Mobile No. : </label></td>
+                <td>
+                    <input type="text" id="mobilenum" size="1" value="+91"/>
+                    <input type="text" id="mobilenum" size="10" />
+                </td>
+            </tr>
+            <tr>
+                <td><label for="emailid">Email id :</label></td>
+                <td><input id="emailid" type="text" /></td>
+            </tr>
+
+            <tr>
+                <td><label for="pass">Password : </label></td>
+                <td><input id="pass" name="pass" type="password" /></td>
+            </tr>
+            
+            <tr>
+                <td><label>Gender :</label></td>
+                <td>
+                <input type="radio" name="g" /> Male
+                <input type="radio" name="g" /> Female
+                </td>
+            </tr>
+            
+            <tr>
+                <td><label>Department: </label></td>
+                <td>
+                <input type="checkbox" /> CSE
+                <input type="checkbox" /> IT
+                <input type="checkbox" /> ECE
+                <input type="checkbox" /> Civil
+                <input type="checkbox" /> Mech
+                </td>
+            </tr>
+            
+            <tr>
+                <td><label>Course :</label></td>
+                <td><select>
+                    <option> ---------------------- Select Current Course's ------------------------ </option>
+                    <option>Python</option>
+                    <option>Node</option>
+                    <option>Java</option>
+                    <option>React</option>
+                    <option>PHP</option>
+                </select>
+                </td>
+            </tr>
+            
+            <tr>
+                <td><label>Student photo :</label></td>
+                <td><input type="file" /></td>
+            </tr>
+            
+            <tr>
+                <td><label for="City">City :</label></td>
+                <td><input id="City" type="text"/></td>
+            </tr>
+            
+            <tr>
+                <td><label for="address">Address :</label></td>
+                <td><textarea id="address" cols="48" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Register" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
